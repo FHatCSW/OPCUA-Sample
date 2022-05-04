@@ -13,6 +13,7 @@ RUN apt-get update && apt-get install -yq stress wget
 RUN apt install libxml2 -y
 RUN apt-get install libxslt-dev -y
 RUN apt-get install python-dev -y
+RUN apt-get install gcc -y
 
 # Set our working directory
 WORKDIR /usr/src/app
