@@ -10,6 +10,9 @@ FROM python:3.9-slim-bullseye
 
 RUN apt-get update && apt-get install -yq stress wget
 
+RUN apt-get install libxml2
+RUN apt-get install libxslt
+
 # Set our working directory
 WORKDIR /usr/src/app
 

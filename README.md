@@ -25,7 +25,7 @@ Sample implementation of a OPC-UA Server &amp; Client running in Docker on two R
 - Update & Upgrade
     ```bash
     sudo apt-get update
-    sudo apt-get upgrade
+    sudo apt-get dist-upgrade
     ```
 - Install Git
     ``` bash
@@ -52,6 +52,21 @@ Sample implementation of a OPC-UA Server &amp; Client running in Docker on two R
     sudo pip3 install docker-compose
     docker-compose version
     ```
+  
+- Clone repository
+
+    ``` bash
+    git clone https://github.com/FHatCSW/OPCUA-Sample.git
+    ```
+  
+
+- Install libxml2 and libxslt development package
+
+    ``` bash
+    sudo apt-get install libxml2
+    sudo apt-get install libxslt
+    ```
+  
 - Reboot Raspberry
 
     ``` bash
@@ -62,7 +77,7 @@ Sample implementation of a OPC-UA Server &amp; Client running in Docker on two R
 
 Got to directory
 
-    cd /admin/OPCUA-Sample/opcua-client
+    cd /home/admin/OPCUA-Sample/opcua-client
 
 Start docker container
 
@@ -72,11 +87,11 @@ Start docker container
 
 Got to directory
 
-    cd /admin/OPCUA-Sample/opcua-server
+    cd /home/admin/OPCUA-Sample/opcua-server
 
 Start docker container
 
-    docker-compose up -d
+    sudo docker-compose up -d
 
 # Docker
 
@@ -101,5 +116,13 @@ Shutdown a certain docker compose process:
 remove a conatiner
 
     docker rm -f influxdb
+
+# Code
+
+## Client
+
+## Server
+
+https://github.com/FreeOpcUa/python-opcua/blob/master/examples/server-minimal.py
 
 
