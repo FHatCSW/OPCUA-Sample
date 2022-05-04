@@ -11,7 +11,7 @@ FROM python:3.9-slim-bullseye
 RUN apt-get update && apt-get install -yq stress wget
 
 RUN apt install libxml2 -y
-RUN apt-get install libxslt -y
+RUN apt-get install libxslt-dev -y
 
 # Set our working directory
 WORKDIR /usr/src/app
