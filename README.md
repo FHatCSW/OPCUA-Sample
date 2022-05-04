@@ -64,9 +64,19 @@ Got to directory
 
     cd /admin/OPCUA-Sample/opcua-client
 
+Start docker container
 
+    docker-compose up -d
 
 ### Server
+
+Got to directory
+
+    cd /admin/OPCUA-Sample/opcua-server
+
+Start docker container
+
+    docker-compose up -d
 
 # Docker
 
