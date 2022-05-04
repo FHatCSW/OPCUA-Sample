@@ -60,6 +60,12 @@ Sample implementation of a OPC-UA Server &amp; Client running in Docker on two R
   
 ### Client
 
+Got to directory
+
+    cd /admin/OPCUA-Sample/opcua-client
+
+
+
 ### Server
 
 # Docker
