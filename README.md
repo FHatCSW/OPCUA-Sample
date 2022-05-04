@@ -93,6 +93,14 @@ Start docker container
 
     sudo docker-compose up -d
 
+# Git
+
+## Useful commands
+
+Stash all local changes on the Raspberry
+
+    git stash push --include-untracked
+
 # Docker
 
 ## Useful commands
