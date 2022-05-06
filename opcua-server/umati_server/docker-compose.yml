@@ -2,7 +2,7 @@ version: "2"
 
 services:
  opcuaserver:
-   build: ./server
+   image: ./server
    restart: always
    ports:
      - 4840:4840
