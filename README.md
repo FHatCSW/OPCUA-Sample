@@ -83,6 +83,14 @@ Start docker container
 
     docker-compose up -d
 
+Open your browser
+
+    http://opcua-client.local:8000
+
+Define the server address and connect
+
+    opc.tcp://<IP OF THE RASPBERRY SERVER>:4840/freeopcua/server/
+
 ### Server
 
 Got to directory
